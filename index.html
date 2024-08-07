@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/css/styles.css" />
+        <link rel="stylesheet" href="./src/css/responsive.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Urbanist:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./src/css/styles.css" />
         <link
             rel="shortcut icon"
             href="./src/images/favicon.png"
@@ -15,16 +18,746 @@
         />
         <title>AzureDream Lodge</title>
     </head>
+
     <body>
-        <h1 class="text-goldish font-playfair container">Hello There</h1>
-        <div class="container">
-            <p class="text-goldish font-urbanist">
-                Welcome to AzureDream Lodge, a place where you can relax and
-                enjoy the beauty of nature. We offer a variety of activities for
-                you to enjoy, from hiking and fishing to bird watching and
-                stargazing. Our lodge is located in the heart of the forest,
-                surrounded by lush greenery and fresh air. Come and experience
-                the magic of AzureDream Lodge today!
-            </p>
+        <!-- -------------------------- Header Section ------------------------ -->
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img
+                            src="./src/images/logo.png"
+                            alt="AzureDream Lodge"
+                        />
+                    </a>
+                </div>
+
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Rooms</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+                <div class="nav-right">
+                    <div class="login_account">
+                        <div class="account-circle"></div>
+                        <div>
+                            <a href="#" class="login-signup">Login/Signup</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn">Reservation</a>
+                </div>
+            </div>
+        </header> -->
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img
+                            src="./src/images/logo.png"
+                            alt="AzureDream Lodge"
+                        />
+                    </a>
+                </div>
+
+                <nav id="main-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Rooms</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+                <div class="nav-right">
+                    <div class="login_account">
+                        <div class="account-circle"></div>
+                        <div>
+                            <a href="#" class="login-signup">Login/Signup</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn">Reservation</a>
+                </div>
+
+                <!-- Hamburger menu button -->
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Overlay for closing the menu by clicking outside -->
+            <div id="overlay"></div>
+        </header>
+
+        <main>
+            <!-- -------------------------- Hero Section ------------------------ -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-left">
+                        <div class="vec1">
+                            <img src="./src/images/Frame.png" />
+                        </div>
+
+                        <div class="vec2">
+                            <img src="./src/images/Vector.png" />
+                        </div>
+
+                        <dev class="hero-text">
+                            <h1>Find the top Hotels nearby<span>.</span></h1>
+
+                            <p>
+                                Looking for a comfortable and convenient place
+                                to call home? Our house rental offers spacious
+                                living areas, modern amenities, and a prime
+                                location. Featuring multiple bedrooms, updated
+                                kitchens, and cozy living spaces, it's perfect
+                                for families or professionals.
+                            </p>
+                            <div>
+                                <dev class="tags">
+                                    <h6>Vila</h6>
+                                    <dev class="divider"></dev>
+                                    <h6>Family House</h6>
+                                    <dev class="divider"></dev>
+                                    <h6>Hotel</h6>
+                                    <dev class="divider"></dev>
+                                    <h6>Room</h6>
+                                </dev>
+                            </div>
+                        </dev>
+
+                        <dev class="hero-btn">
+                            <a href="#" class="btn-light">Discover now</a>
+
+                            <div class="circle">
+                                <div class="overlay">
+                                    <div class="play-button">
+                                        <img
+                                            src="./src/images/VectorFrame.png"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Watch out story</h5>
+                        </dev>
+
+                        <dev class="hero-filter">
+                            <h5>Check Availiability</h5>
+
+                            <div class="filter">
+                                <dev>
+                                    <h4>Check In</h4>
+                                    <p>Add dates</p>
+                                </dev>
+
+                                <dev class="divider"></dev>
+                                <dev>
+                                    <h4>Check Out</h4>
+                                    <p>Add dates</p>
+                                </dev>
+
+                                <dev class="divider"></dev>
+                                <dev>
+                                    <h4>Adults</h4>
+                                    <p>Add Adults</p>
+                                </dev>
+
+                                <dev class="divider"></dev>
+                                <dev>
+                                    <h4>Children</h4>
+                                    <p>Add Children</p>
+                                </dev>
+
+                                <dev class="divider"></dev>
+                                <dev>
+                                    <h4>Room’s</h4>
+                                    <p>Add Room’s</p>
+                                </dev>
+
+                                <div class="round">
+                                    <img src="./src/images/Search.png" />
+                                </div>
+                            </div>
+                        </dev>
+                    </div>
+
+                    <div class="hero-right">
+                        <div class="hero-img">
+                            <img src="./src/images/hero.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="flex">
+                <div class="m-auto flex gap-20 items-center">
+                    <div class="flex flex-col gap-6 mr-10">
+                        <svg
+                            width="15"
+                            height="8"
+                            viewBox="0 0 15 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.76129 4.02552C8.90174 3.96204 8.98063 3.876 8.98063 3.78629C8.98063 3.69658 8.90174 3.61053 8.76129 3.54706L1.26129 0.161725C1.11912 0.101927 0.93107 0.0693726 0.736768 0.07092C0.542467 0.0724673 0.357082 0.107996 0.219669 0.170022C0.0822561 0.232047 0.00354437 0.315726 0.00011616 0.403429C-0.00331205 0.491132 0.0688109 0.576012 0.201291 0.640187L7.17129 3.78629L0.201292 6.93239C0.0688115 6.99656 -0.00331141 7.08144 0.000116815 7.16915C0.00354504 7.25685 0.0822568 7.34053 0.21967 7.40255C0.357083 7.46458 0.542468 7.50011 0.736769 7.50166C0.93107 7.5032 1.11912 7.47065 1.26129 7.41085L8.76129 4.02552Z"
+                                fill="black"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.7636 4.02552C14.904 3.96204 14.9829 3.876 14.9829 3.78629C14.9829 3.69658 14.904 3.61053 14.7636 3.54706L7.26355 0.161725C7.19489 0.128465 7.11209 0.101788 7.02009 0.0832848C6.92809 0.0647821 6.82878 0.0548329 6.72807 0.0540309C6.62737 0.0532293 6.52734 0.0615902 6.43395 0.0786166C6.34057 0.095643 6.25573 0.120986 6.18451 0.153132C6.11329 0.185279 6.05715 0.223571 6.01943 0.265725C5.98171 0.307878 5.96318 0.353029 5.96496 0.398484C5.96674 0.443939 5.98878 0.488767 6.02977 0.530293C6.07076 0.57182 6.12987 0.609194 6.20355 0.640187L13.1736 3.78629L6.20355 6.93239C6.07107 6.99656 5.99895 7.08144 6.00238 7.16915C6.00581 7.25685 6.08452 7.34053 6.22193 7.40255C6.35934 7.46458 6.54473 7.50011 6.73903 7.50166C6.93333 7.5032 7.12138 7.47065 7.26355 7.41085L14.7636 4.02552Z"
+                                fill="black"
+                            />
+                        </svg>
+                        <svg
+                            width="15"
+                            height="8"
+                            viewBox="0 0 15 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.76129 4.02552C8.90174 3.96204 8.98063 3.876 8.98063 3.78629C8.98063 3.69658 8.90174 3.61053 8.76129 3.54706L1.26129 0.161725C1.11912 0.101927 0.93107 0.0693726 0.736768 0.07092C0.542467 0.0724673 0.357082 0.107996 0.219669 0.170022C0.0822561 0.232047 0.00354437 0.315726 0.00011616 0.403429C-0.00331205 0.491132 0.0688109 0.576012 0.201291 0.640187L7.17129 3.78629L0.201292 6.93239C0.0688115 6.99656 -0.00331141 7.08144 0.000116815 7.16915C0.00354504 7.25685 0.0822568 7.34053 0.21967 7.40255C0.357083 7.46458 0.542468 7.50011 0.736769 7.50166C0.93107 7.5032 1.11912 7.47065 1.26129 7.41085L8.76129 4.02552Z"
+                                fill="black"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.7636 4.02552C14.904 3.96204 14.9829 3.876 14.9829 3.78629C14.9829 3.69658 14.904 3.61053 14.7636 3.54706L7.26355 0.161725C7.19489 0.128465 7.11209 0.101788 7.02009 0.0832848C6.92809 0.0647821 6.82878 0.0548329 6.72807 0.0540309C6.62737 0.0532293 6.52734 0.0615902 6.43395 0.0786166C6.34057 0.095643 6.25573 0.120986 6.18451 0.153132C6.11329 0.185279 6.05715 0.223571 6.01943 0.265725C5.98171 0.307878 5.96318 0.353029 5.96496 0.398484C5.96674 0.443939 5.98878 0.488767 6.02977 0.530293C6.07076 0.57182 6.12987 0.609194 6.20355 0.640187L13.1736 3.78629L6.20355 6.93239C6.07107 6.99656 5.99895 7.08144 6.00238 7.16915C6.00581 7.25685 6.08452 7.34053 6.22193 7.40255C6.35934 7.46458 6.54473 7.50011 6.73903 7.50166C6.93333 7.5032 7.12138 7.47065 7.26355 7.41085L14.7636 4.02552Z"
+                                fill="black"
+                            />
+                        </svg>
+
+                        <svg
+                            width="15"
+                            height="8"
+                            viewBox="0 0 15 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.76129 4.02552C8.90174 3.96204 8.98063 3.876 8.98063 3.78629C8.98063 3.69658 8.90174 3.61053 8.76129 3.54706L1.26129 0.161725C1.11912 0.101927 0.93107 0.0693726 0.736768 0.07092C0.542467 0.0724673 0.357082 0.107996 0.219669 0.170022C0.0822561 0.232047 0.00354437 0.315726 0.00011616 0.403429C-0.00331205 0.491132 0.0688109 0.576012 0.201291 0.640187L7.17129 3.78629L0.201292 6.93239C0.0688115 6.99656 -0.00331141 7.08144 0.000116815 7.16915C0.00354504 7.25685 0.0822568 7.34053 0.21967 7.40255C0.357083 7.46458 0.542468 7.50011 0.736769 7.50166C0.93107 7.5032 1.11912 7.47065 1.26129 7.41085L8.76129 4.02552Z"
+                                fill="black"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.7636 4.02552C14.904 3.96204 14.9829 3.876 14.9829 3.78629C14.9829 3.69658 14.904 3.61053 14.7636 3.54706L7.26355 0.161725C7.19489 0.128465 7.11209 0.101788 7.02009 0.0832848C6.92809 0.0647821 6.82878 0.0548329 6.72807 0.0540309C6.62737 0.0532293 6.52734 0.0615902 6.43395 0.0786166C6.34057 0.095643 6.25573 0.120986 6.18451 0.153132C6.11329 0.185279 6.05715 0.223571 6.01943 0.265725C5.98171 0.307878 5.96318 0.353029 5.96496 0.398484C5.96674 0.443939 5.98878 0.488767 6.02977 0.530293C6.07076 0.57182 6.12987 0.609194 6.20355 0.640187L13.1736 3.78629L6.20355 6.93239C6.07107 6.99656 5.99895 7.08144 6.00238 7.16915C6.00581 7.25685 6.08452 7.34053 6.22193 7.40255C6.35934 7.46458 6.54473 7.50011 6.73903 7.50166C6.93333 7.5032 7.12138 7.47065 7.26355 7.41085L14.7636 4.02552Z"
+                                fill="black"
+                            />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col gap-9 ml-10">
+                        <svg
+                            width="15"
+                            height="8"
+                            viewBox="0 0 15 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.76129 4.02552C8.90174 3.96204 8.98063 3.876 8.98063 3.78629C8.98063 3.69658 8.90174 3.61053 8.76129 3.54706L1.26129 0.161725C1.11912 0.101927 0.93107 0.0693726 0.736768 0.07092C0.542467 0.0724673 0.357082 0.107996 0.219669 0.170022C0.0822561 0.232047 0.00354437 0.315726 0.00011616 0.403429C-0.00331205 0.491132 0.0688109 0.576012 0.201291 0.640187L7.17129 3.78629L0.201292 6.93239C0.0688115 6.99656 -0.00331141 7.08144 0.000116815 7.16915C0.00354504 7.25685 0.0822568 7.34053 0.21967 7.40255C0.357083 7.46458 0.542468 7.50011 0.736769 7.50166C0.93107 7.5032 1.11912 7.47065 1.26129 7.41085L8.76129 4.02552Z"
+                                fill="black"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.7636 4.02552C14.904 3.96204 14.9829 3.876 14.9829 3.78629C14.9829 3.69658 14.904 3.61053 14.7636 3.54706L7.26355 0.161725C7.19489 0.128465 7.11209 0.101788 7.02009 0.0832848C6.92809 0.0647821 6.82878 0.0548329 6.72807 0.0540309C6.62737 0.0532293 6.52734 0.0615902 6.43395 0.0786166C6.34057 0.095643 6.25573 0.120986 6.18451 0.153132C6.11329 0.185279 6.05715 0.223571 6.01943 0.265725C5.98171 0.307878 5.96318 0.353029 5.96496 0.398484C5.96674 0.443939 5.98878 0.488767 6.02977 0.530293C6.07076 0.57182 6.12987 0.609194 6.20355 0.640187L13.1736 3.78629L6.20355 6.93239C6.07107 6.99656 5.99895 7.08144 6.00238 7.16915C6.00581 7.25685 6.08452 7.34053 6.22193 7.40255C6.35934 7.46458 6.54473 7.50011 6.73903 7.50166C6.93333 7.5032 7.12138 7.47065 7.26355 7.41085L14.7636 4.02552Z"
+                                fill="black"
+                            />
+                        </svg>
+                        <svg
+                            width="15"
+                            height="8"
+                            viewBox="0 0 15 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.76129 4.02552C8.90174 3.96204 8.98063 3.876 8.98063 3.78629C8.98063 3.69658 8.90174 3.61053 8.76129 3.54706L1.26129 0.161725C1.11912 0.101927 0.93107 0.0693726 0.736768 0.07092C0.542467 0.0724673 0.357082 0.107996 0.219669 0.170022C0.0822561 0.232047 0.00354437 0.315726 0.00011616 0.403429C-0.00331205 0.491132 0.0688109 0.576012 0.201291 0.640187L7.17129 3.78629L0.201292 6.93239C0.0688115 6.99656 -0.00331141 7.08144 0.000116815 7.16915C0.00354504 7.25685 0.0822568 7.34053 0.21967 7.40255C0.357083 7.46458 0.542468 7.50011 0.736769 7.50166C0.93107 7.5032 1.11912 7.47065 1.26129 7.41085L8.76129 4.02552Z"
+                                fill="black"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.7636 4.02552C14.904 3.96204 14.9829 3.876 14.9829 3.78629C14.9829 3.69658 14.904 3.61053 14.7636 3.54706L7.26355 0.161725C7.19489 0.128465 7.11209 0.101788 7.02009 0.0832848C6.92809 0.0647821 6.82878 0.0548329 6.72807 0.0540309C6.62737 0.0532293 6.52734 0.0615902 6.43395 0.0786166C6.34057 0.095643 6.25573 0.120986 6.18451 0.153132C6.11329 0.185279 6.05715 0.223571 6.01943 0.265725C5.98171 0.307878 5.96318 0.353029 5.96496 0.398484C5.96674 0.443939 5.98878 0.488767 6.02977 0.530293C6.07076 0.57182 6.12987 0.609194 6.20355 0.640187L13.1736 3.78629L6.20355 6.93239C6.07107 6.99656 5.99895 7.08144 6.00238 7.16915C6.00581 7.25685 6.08452 7.34053 6.22193 7.40255C6.35934 7.46458 6.54473 7.50011 6.73903 7.50166C6.93333 7.5032 7.12138 7.47065 7.26355 7.41085L14.7636 4.02552Z"
+                                fill="black"
+                            />
+                        </svg>
+
+                        <svg
+                            width="15"
+                            height="8"
+                            viewBox="0 0 15 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.76129 4.02552C8.90174 3.96204 8.98063 3.876 8.98063 3.78629C8.98063 3.69658 8.90174 3.61053 8.76129 3.54706L1.26129 0.161725C1.11912 0.101927 0.93107 0.0693726 0.736768 0.07092C0.542467 0.0724673 0.357082 0.107996 0.219669 0.170022C0.0822561 0.232047 0.00354437 0.315726 0.00011616 0.403429C-0.00331205 0.491132 0.0688109 0.576012 0.201291 0.640187L7.17129 3.78629L0.201292 6.93239C0.0688115 6.99656 -0.00331141 7.08144 0.000116815 7.16915C0.00354504 7.25685 0.0822568 7.34053 0.21967 7.40255C0.357083 7.46458 0.542468 7.50011 0.736769 7.50166C0.93107 7.5032 1.11912 7.47065 1.26129 7.41085L8.76129 4.02552Z"
+                                fill="black"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.7636 4.02552C14.904 3.96204 14.9829 3.876 14.9829 3.78629C14.9829 3.69658 14.904 3.61053 14.7636 3.54706L7.26355 0.161725C7.19489 0.128465 7.11209 0.101788 7.02009 0.0832848C6.92809 0.0647821 6.82878 0.0548329 6.72807 0.0540309C6.62737 0.0532293 6.52734 0.0615902 6.43395 0.0786166C6.34057 0.095643 6.25573 0.120986 6.18451 0.153132C6.11329 0.185279 6.05715 0.223571 6.01943 0.265725C5.98171 0.307878 5.96318 0.353029 5.96496 0.398484C5.96674 0.443939 5.98878 0.488767 6.02977 0.530293C6.07076 0.57182 6.12987 0.609194 6.20355 0.640187L13.1736 3.78629L6.20355 6.93239C6.07107 6.99656 5.99895 7.08144 6.00238 7.16915C6.00581 7.25685 6.08452 7.34053 6.22193 7.40255C6.35934 7.46458 6.54473 7.50011 6.73903 7.50166C6.93333 7.5032 7.12138 7.47065 7.26355 7.41085L14.7636 4.02552Z"
+                                fill="black"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------------- Properties Section ------------------------ -->
+            <section class="properties">
+                <div class="container">
+                    <div class="propertie-text">
+                        <h5>
+                            Discover Homeya's Finest Properties For Your Dream
+                            Home
+                        </h5>
+                        <p>
+                            All three of Rooms Hotels locations are restorations
+                            that translate historic locations into places of
+                            contemporary comfort. Industrial architecture,
+                            salvaged building materials and the unique approach
+                        </p>
+                    </div>
+
+                    <div class="propertie-box">
+                        <div class="room-container grid-container1">
+                            <div
+                                class="room-box"
+                                style="
+                                    background-image: url('./src/images/Rectangle1.png');
+                                "
+                            >
+                                <div class="price-tag">
+                                    $62.00<span>/Day</span>
+                                </div>
+                                <div class="room-info">
+                                    <h3>Deluxe Double Room</h3>
+                                    <hr />
+                                    <dev class="info">
+                                        <h6>500 Sqft</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>3-4 guests</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>Free Wi-Fi</h6>
+                                    </dev>
+                                </div>
+                            </div>
+
+                            <div
+                                class="room-box"
+                                style="
+                                    background-image: url('./src/images/Rectangle2.png');
+                                "
+                            >
+                                <div class="price-tag">
+                                    $62.00<span>/Day</span>
+                                </div>
+                                <div class="room-info">
+                                    <h3>Deluxe Double Room</h3>
+                                    <hr />
+                                    <dev class="info">
+                                        <h6>500 Sqft</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>3-4 guests</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>Free Wi-Fi</h6>
+                                    </dev>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room-container grid-container2">
+                            <div
+                                class="room-box"
+                                style="
+                                    background-image: url('./src/images/Rectangle3.png');
+                                "
+                            >
+                                <div class="price-tag">
+                                    $62.00<span>/Day</span>
+                                </div>
+                                <div class="room-info">
+                                    <h3>Hill View Suite</h3>
+                                    <hr />
+                                    <dev class="info">
+                                        <h6>500 Sqft</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>3-4 guests</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>Free Wi-Fi</h6>
+                                    </dev>
+                                </div>
+                            </div>
+
+                            <div
+                                class="room-box"
+                                style="
+                                    background-image: url('./src/images/Rectangle4.png');
+                                "
+                            >
+                                <div class="price-tag">
+                                    $62.00<span>/Day</span>
+                                </div>
+                                <div class="room-info">
+                                    <h3>Hill View Suite</h3>
+                                    <hr />
+                                    <dev class="info">
+                                        <h6>500 Sqft</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>3-4 guests</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>Free Wi-Fi</h6>
+                                    </dev>
+                                </div>
+                            </div>
+
+                            <div
+                                class="room-box"
+                                style="
+                                    background-image: url('./src/images/Rectangle5.png');
+                                "
+                            >
+                                <div class="price-tag">
+                                    $62.00<span>/Day</span>
+                                </div>
+                                <div class="room-info">
+                                    <h3>Hill View Suite</h3>
+                                    <hr />
+                                    <dev class="info">
+                                        <h6>500 Sqft</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>3-4 guests</h6>
+                                        <dev class="divider"></dev>
+                                        <h6>Free Wi-Fi</h6>
+                                    </dev>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="propertie-btn">
+                        <button class="view-all-btn btn">
+                            View All <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------------------- Review Section ------------------------ -->
+                <div class="left">
+                    <dev class="box">
+                        <h2>Rave Reviews from Our Satisfied Guests</h2>
+
+                        <div class="nav-controls">
+                            <button class="nav-button">
+                                <span class="arrow">←</span>
+                            </button>
+                            <div class="dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="nav-button">
+                                <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </dev>
+                </div>
+
+                <div class="right">
+                    <div class="testimonial-box">
+                        <div class="testimonial-header">
+                            <img
+                                src="./src/images//review1.jpg"
+                                alt="Profile Picture"
+                                class="profile-pic"
+                            />
+
+                            <div class="profile-info">
+                                <p class="name">Arman</p>
+                                <p class="title">Webflow Developer</p>
+                            </div>
+
+                            <div class="quote-icon">
+                                <img
+                                    src="./src/images/“.png"
+                                    alt="Quote Icon"
+                                />
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            Amazing design, easy to customize and a design
+                            quality superlative account on its cloud platform
+                            for the optimized performance. And we didn't on our
+                            original designs.
+                        </p>
+
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="testimonial-box">
+                        <div class="testimonial-header">
+                            <img
+                                src="./src/images//review1.jpg"
+                                alt="Profile Picture"
+                                class="profile-pic"
+                            />
+
+                            <div class="profile-info">
+                                <p class="name">Arman</p>
+                                <p class="title">Webflow Developer</p>
+                            </div>
+
+                            <div class="quote-icon">
+                                <img
+                                    src="./src/images/“.png"
+                                    alt="Quote Icon"
+                                />
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            Amazing design, easy to customize and a design
+                            quality superlative account on its cloud platform
+                            for the optimized performance. And we didn't on our
+                            original designs.
+                        </p>
+
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section class="reviews" id="review">
+                <div class="left">
+                    <div class="box">
+                        <h2>Rave Reviews from Our Satisfied Guests</h2>
+                        <div class="nav-controls">
+                            <button class="nav-button">
+                                <span class="arrow">←</span>
+                            </button>
+                            <div class="dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="nav-button">
+                                <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-container">
+                    <div class="right first-right">
+                        <div class="testimonial-box">
+                            <div class="testimonial-header">
+                                <img
+                                    src="./src/images/review1.jpg"
+                                    alt="Profile Picture"
+                                    class="profile-pic"
+                                />
+                                <div class="profile-info">
+                                    <p class="name">Arman</p>
+                                    <p class="title">Webflow Developer</p>
+                                </div>
+                                <div class="quote-icon">
+                                    <img
+                                        src="./src/images/“.png"
+                                        alt="Quote Icon"
+                                    />
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                Amazing design, easy to customize and a design
+                                quality superlative account on its cloud
+                                platform for the optimized performance. And we
+                                didn't on our original designs.
+                            </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right second-right">
+                        <div class="testimonial-box">
+                            <div class="testimonial-header">
+                                <img
+                                    src="./src/images/review1.jpg"
+                                    alt="Profile Picture"
+                                    class="profile-pic"
+                                />
+                                <div class="profile-info">
+                                    <p class="name">Arman</p>
+                                    <p class="title">Webflow Developer</p>
+                                </div>
+                                <div class="quote-icon">
+                                    <img
+                                        src="./src/images/“.png"
+                                        alt="Quote Icon"
+                                    />
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                Amazing design, easy to customize and a design
+                                quality superlative account on its cloud
+                                platform for the optimized performance. And we
+                                didn't on our original designs.
+                            </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- -------------------------- Footer Section ------------------------ -->
+        <footer class="footer">
+            <div class="bg">
+                <img src="./src/images/BG Image.png" />
+            </div>
+            <div>
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="footer-logo">
+                            <div class="logo">
+                                <a href="#">
+                                    <img
+                                        src="./src/images/logo.png"
+                                        alt="AzureDream Lodge"
+                                    />
+                                </a>
+                            </div>
+
+                            <p>Follow us on social media</p>
+                            <div class="social-icons">
+                                <a href="#"
+                                    ><img
+                                        src="./src/images/s1.png"
+                                        alt="Facebook"
+                                /></a>
+                                <a href="#"
+                                    ><img
+                                        src="./src/images/s2.png"
+                                        alt="LinkedIn"
+                                /></a>
+                                <a href="#"
+                                    ><img
+                                        src="./src/images/s3.png"
+                                        alt="Twitter"
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-links">
+                            <div class="quick-links">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our Service</a></li>
+                                    <li><a href="#">Our Blog's</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="appointment">
+                                <h4>Appointment</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#"
+                                            >Web Design and development</a
+                                        >
+                                    </li>
+                                    <li><a href="#">UI/UX Service</a></li>
+                                    <li><a href="#">Digital marketing</a></li>
+                                    <li><a href="#">Custom Web Design</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="contact-info">
+                                <h4>Contact Info</h4>
+
+                                <ul>
+                                    <li>
+                                        <a href="#"
+                                            >Email: <br />
+                                            <a
+                                                href="mailto:hunkcyagencyUI@gmail.com"
+                                                >hunkcyagencyUI@gmail.com</a
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Location: <br />
+                                            302/1, Hazi Tower, Gandara New Rd,
+                                            Dhaka 1204</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom px-32 text-md">
+                    <dev class="last-footer">
+                        <p>©2024 Bookky | All Rights Reserved.</p>
+                        <div class="footer-bottom-links">
+                            <a href="#">Terms of service</a>
+                            <a href="#">Privacy policy</a>
+                        </div>
+                    </dev>
+                </div>
+            </div>
+        </footer>
+        <script src="./src/js/script.js"></script>
     </body>
 </html>

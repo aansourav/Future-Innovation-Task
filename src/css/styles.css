@@ -1,8 +1,1015 @@
-@tailwind base;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
-
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: "Urbanist", "Playfair Display", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+/* .container {
+    max-width: 1400px;
+    margin: 0 auto;
+} */
+
+.btn {
+    padding: 10px 20px;
+    background: #ceaf83;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.6px;
+    border-radius: 177px;
+}
+
+.btn-light {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 26px 15px 26px;
+    gap: 10px;
+    border-radius: 30px;
+    background: #eee5d8;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #ceaf83;
+}
+
+/* General header styles */
+header {
+    position: relative;
+}
+
+/* Adjust styles for small devices */
+@media (max-width: 991.98px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 2000; /* Ensure it's above the overlay */
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #000;
+    }
+
+    #main-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        flex-direction: column;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: translateX(100%);
+        opacity: 0;
+        z-index: 1500; /* Above the overlay */
+    }
+
+    #main-nav.show {
+        display: flex;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #main-nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eaeaea;
+        text-align: center;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    #overlay.show {
+        display: block;
+        opacity: 0.5;
+    }
+
+    /* Blurred background effect */
+    .blur {
+        filter: blur(5px);
+        transition: filter 0.3s ease;
+    }
+}
+
+/* -------------- Header ------------------ */
+header {
+    height: 100px;
+    padding-top: 3px;
+    box-shadow: 0px 4px 20px 2px rgba(16, 30, 87, 0.07);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 91px;
+    width: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 60px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #4d4d4d;
+}
+
+header nav a:hover {
+    color: #000000;
+}
+
+header .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+header .login_account {
+    display: flex;
+    flex-direction: row;
+    margin-right: 18px;
+}
+
+header .account-circle {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    /* opacity: 0px; */
+    /* background-color: #ceaf83; */
+}
+
+header .login-signup {
+    text-decoration: none;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #4d4d4d;
+}
+header .login-signup:hover {
+    color: #000000;
+}
+
+/* ---------------- Hero Section ------------------- */
+.hero {
+    margin: 72px 0;
+}
+
+.hero .container {
+    display: flex;
+}
+
+.hero .hero-left {
+    margin-top: 60px;
+    position: relative;
+}
+
+.hero .hero-left .vec1 {
+    top: 0px;
+    right: 60px;
+    position: absolute;
+}
+
+.hero .hero-left .vec2 {
+    top: 100px;
+    right: 10px;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-family: Playfair Display;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 82px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.hero h1 span {
+    color: #ceaf83;
+}
+
+.hero p {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #4d4d4d;
+    margin-bottom: 44px;
+}
+
+.hero .tags {
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+.hero .tags h6 {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: center;
+    color: #4d4d4d;
+}
+.hero .tags .divider {
+    height: 19px;
+    opacity: 0.4;
+    border-left: 0.5px solid rgb(255, 255, 255);
+}
+
+.hero .tags:hover .divider {
+    border-left: 0.5px solid rgb(100, 100, 100);
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+@keyframes glow {
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 128, 255, 1);
+    }
+}
+
+.circle {
+    width: 52px;
+    height: 52px;
+    background-image: url("./../images/Button-Img.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 14px 0 44px;
+    animation: glow 2s infinite ease-in-out; /* Apply the glow animation */
+}
+
+.circle .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circle .overlay .play-button img {
+    width: 60%; /* Adjust size as needed */
+    height: auto;
+    display: block;
+}
+
+.circle .overlay .play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-btn h5 {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.hero-filter {
+    position: absolute;
+    z-index: 10;
+}
+
+.hero-filter h5 {
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 22px;
+}
+
+.filter {
+    width: 1102px;
+    height: 113px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 106px;
+    box-shadow: 0px 4px 20px 2px rgba(16, 30, 87, 0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px 20px 20px 40px;
+}
+
+.filter dev {
+    margin-left: 20px;
+}
+
+.filter h4 {
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 40px 0 10px 0;
+}
+
+.filter p {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.filter .divider {
+    height: 55px;
+    border-left: 1px dotted rgba(202, 202, 202, 1);
+}
+
+.filter .round {
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    background: rgba(206, 175, 131, 1);
+    box-shadow: 0px 6px 11.8px 0px rgba(102, 53, 48, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+/* -------------------- Properties ------------------ */
+.properties {
+    background-image: url("./../images/Rectangle.png");
+    padding: 85px;
+}
+
+.properties .container {
+    padding: 0px 40px;
+}
+
+.propertie-text {
+    display: flex;
+}
+
+.propertie-text h5 {
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+    flex: 1;
+    padding: 0 30px;
+}
+
+.propertie-text p {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #4d4d4d;
+    flex: 1;
+    padding: 0 30px;
+}
+
+.propertie-box {
+    margin: 52px 0;
+}
+
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.room-box {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    /* background-image: url("./../images/Rectangle1.png"); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    /* width: 784px; */
+    height: 459px;
+}
+
+.room-box:hover h3 {
+    color: #ceaf83;
+}
+
+.room-box:hover hr {
+    opacity: 1;
+}
+
+.price-tag {
+    position: absolute;
+    top: 38px;
+    right: 33px;
+    color: #ceaf83;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22.4px;
+}
+
+.price-tag span {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.room-info {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    padding: 38px;
+    background: linear-gradient(
+        rgba(217, 217, 217, 0) 2.94%,
+        rgba(0, 0, 0, 0.8) 97.37%
+    );
+}
+
+.room-info h3 {
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 24px;
+    position: absolute;
+    bottom: 104px;
+}
+
+.room-info hr {
+    width: 340px;
+    /* height: 0px; */
+    border: 2px 0px 0px 0px;
+    opacity: 0;
+    position: absolute;
+    bottom: 96px;
+    border-color: #ceaf83;
+}
+
+.room-info .info {
+    display: flex;
+    color: #fff;
+    /* margin: 25px 0 42px 0; */
+    align-items: center;
+    position: absolute;
+    bottom: 51px;
+}
+
+.room-info .info h6 {
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.room-info .info .divider {
+    height: 10px;
+    margin-right: 20px;
+    opacity: 0.4;
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    /* grid-template-rows: auto auto; */
+    /* gap: 20px; */
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto auto; */
+    /* gap: 20px; */
+}
+
+.propertie-btn {
+    text-align: center;
+}
+
+.view-all-btn .arrow {
+    margin-left: 5px;
+}
+
+/* ----------------------- Review Section ------------------- */
+/* .reviews {
+    display: flex;
+    height: 471px;
+}
+
+.reviews .left {
+    width: 50%;
+    background-color: #1c1b1f;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.reviews .left .box {
+    position: absolute;
+    right: 0px;
+    padding: 100px 40px;
+    width: 700px;
+}
+
+.reviews .left .box h2 {
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.reviews .arrow {
+    padding-bottom: 4px;
+}
+
+.nav-button:hover {
+    background: #ceaf83;
+    color: rgb(255, 255, 255);
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d9d9d9;
+}
+
+.dots .active {
+    background: #ceaf83;
+}
+
+.reviews .right {
+    width: 50%;
+    background-color: #fff9f6;
+    padding: 100px 60px;
+}
+
+.testimonial-box {
+    background-color: white;
+    border: 1px solid #cacaca;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-header .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.name {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.title {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4d4d4d;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.quote-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.testimonial-text {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #4d4d4d;
+    margin: 20px 0;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+}
+
+.star {
+    color: #ffc119;
+    font-size: 20px;
+} */
+
+.reviews {
+    display: flex;
+    height: 471px;
+    overflow: hidden; /* Ensure the overflow is hidden to clip the second testimonial */
+}
+
+.reviews {
+    display: flex;
+    height: 471px;
+    overflow: hidden; /* Ensure the content does not overflow */
+}
+
+.reviews .left {
+    width: 50%;
+    background-color: #1c1b1f;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.reviews .left .box {
+    position: absolute;
+    right: 0px;
+    padding: 100px 40px;
+    width: 100%; /* Use the available width */
+}
+
+.reviews .left .box h2 {
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.reviews .arrow {
+    padding-bottom: 4px;
+}
+
+.nav-button:hover {
+    background: #ceaf83;
+    color: rgb(255, 255, 255);
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d9d9d9;
+}
+
+.dots .active {
+    background: #ceaf83;
+}
+
+.right-container {
+    display: flex;
+    width: 50%;
+    position: relative; /* To control the visibility of the second box */
+}
+
+.first-right,
+.second-right {
+    flex-shrink: 0; /* Prevent shrinking */
+    padding: 100px 60px;
+    width: 100%;
+}
+
+.first-right {
+    background-color: #fff9f6;
+}
+
+.second-right {
+    transform: translateX(-50%); /* Move half of the second box off-screen */
+}
+
+.testimonial-box {
+    background-color: white;
+    border: 1px solid #cacaca;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-header .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.name {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.title {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4d4d4d;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.quote-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.testimonial-text {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #4d4d4d;
+    margin: 20px 0;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+}
+
+.star {
+    color: #ffc119;
+    font-size: 20px;
+}
+
+/* --------------- Footer ------------------ */
+
+.footer {
+    background-color: #ebebeb;
+    padding-top: 80px;
+    position: relative;
+}
+
+.footer .bg {
+    top: 20px;
+    left: 0px;
+    position: absolute;
+}
+
+.footer .container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    font-family: Urbanist;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.footer-links div {
+    flex: 1;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+
+.footer-links h4 {
+    margin-bottom: 0px;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #000000;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000000;
+}
+
+.contact-info p {
+    color: #000000;
+}
+.contact-info a {
+    color: #000000;
+}
+
+.footer-bottom {
+    color: #ffffff;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    background-color: #1f1f1f;
+    min-height: 57px;
+}
+
+.footer-bottom .last-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-bottom-links a {
+    text-decoration: none;
+    color: #ffffff;
 }
